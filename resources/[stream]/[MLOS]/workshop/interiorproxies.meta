@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2300" />
+  <proxies>
+	<Item>imp_impexp_interior_placement_interior_1_impexp</Item>
+	</proxies>
+</SInteriorOrderData>

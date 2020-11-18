@@ -1,0 +1,20 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>cs1_04_strm_1.ymap</Item>
+    <Item>hei_cs1_04_strm_1.ymap</Item>
+    <Item>hei_cs1_04_interior_v_bank4_milo_.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>v_int_41.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames>
+    <Item>v_bank4.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>
