@@ -1,0 +1,111 @@
+html {
+    color: #34495e;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+#wrap {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    width: 20vw;
+    min-height: 100px;
+    margin-top: 12.5%;
+    margin-left: 2.5%;
+    margin-right: auto;
+    background-color: #141414ad;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5), 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    border: solid 1px #464646ad;
+    top: 400px;
+    z-index: 100;
+}
+
+p {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    float: left;
+    margin-left: 14px;
+    padding-left: 14px;
+    font-size: 1.00vw;
+}
+
+.header {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    height: 3px;
+    width: auto;
+    /* background-color: #1C1C1C; */
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top-left-radius: 2px 2px;
+    border-top-right-radius: 2px 2px;
+}
+
+.jobs {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    /* padding-top: 10px; */
+    /* margin-right: 2px; */
+    /* background-color: #1C1C1C; */
+    height: 2vw;
+    width: 100%;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3), 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    /* background-image: url("tp.png"); */
+    /* background-size: 5.5%; */
+    background-position-y: 1px;
+    border-top-left-radius: 2px 2px;
+    border-top-right-radius: 2px 2px;
+}
+
+.jobs p {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size:14px;
+}
+
+table {
+    text-align: left;
+    color: white;
+    overflow: scroll;
+    /* height:80em; */
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+th,
+td {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+th {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    padding-top: 0px;
+    height: 40px;
+}
+
+tr {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 0.6vw;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+tr.heading {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.serverinfo {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 0.6vw;
+    text-align: center;
+}

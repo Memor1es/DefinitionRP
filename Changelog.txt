@@ -1,0 +1,6 @@
+```diff
+==Changelog: (22th Aug 20)==
+- Removed lawyer access to police mdt
++ Legal mdt
+- Disabled pd heli lock on feature
+```

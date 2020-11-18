@@ -1,0 +1,76 @@
+/q_session	None	
+Opens the queue admin panel displaying all players in session and providing options to configure reserved slot types, priority, and kick or ban. If run from RCON or console will display the session information in console
+
+/exitgame	None	
+Gives players a way to give up their reconnect grace time and exit the game when finished playing
+
+/q_addpriority	
+Steam or License or Handle	Adds priority to a player
+
+Also available via in game UI
+Example: /q_addpriority 11000050888sg23
+Example: /q_addpriority 833g50qqa4e620arq2a937312rt9b5g050d2ew54
+Example: /q_addpriority 66536
+Example: /q_addpriority 1
+
+/q_removepriority	
+Steam or License or Handle	Removes priority from a player
+
+Also available via in game UI
+Example: /q_removepriority 11000050888sg23
+Example: /q_removepriority 833g50qqa4e620arq2a937312rt9b5g050d2ew54
+Example: /q_removepriority 66536
+Example: /q_removepriority 1
+
+/q_addreserve	
+Steam or License or Handle and 1 or 2 or 3	Add or change reserved slot type
+Also available via in game UI
+
+Example: /q_addreserve 11000050888sg23 1
+Example: /q_addreserve 833g50qqa4e620arq2a937312rt9b5g050d2ew54 3
+Example: /q_addreserve 66536 2
+Example: /q_addreserve 1 1
+
+/q_removereserve	
+Steam or License or Handle	Removes any reserved slot type
+
+Also available via in game UI
+Example: /q_removereserve 11000050888sg23
+Example: /q_removereserve 833g50qqa4e620arq2a937312rt9b5g050d2ew54
+Example: /q_removereserve 66536
+Example: /q_removereserve 1
+
+/q_offlinereserve	
+Steam or License and 1 or 2 or 3	
+Assign an offline player to a reserve type. This is temporary until player joins at which time they are added to persistentance or until the server is restarted, whichever occurs first
+Example: /q_offlinereserve 11000050888sg23 1
+Example: /q_offlinereserve 833g50qqa4e620arq2a937312rt9b5g050d2ew54 3
+
+/q_addban	
+Steam or License or Handle	Bans a player permanently until unbanned
+Also available via in game UI
+Example: /q_addban 11000050888sg23
+Example: /q_addban 833g50qqa4e620arq2a937312rt9b5g050d2ew54
+Example: /q_addban 66536
+Example: /q_addban 1
+
+/q_removeban	Steam or License	Unbans a player
+Example: /q_removeban 11000050888sg23
+Example: /q_removeban 833g50qqa4e620arq2a937312rt9b5g050d2ew54
+
+/q_restart	None	Restarts the queue processing if needed but not recommended
+Check for errors in your console before using this as they are included to help with debugging
+
+
+-=-=-=-=-= EASY ADMIN
+
+kick [playerid] [reason]
+ban [playerid] [reason]
+spectate [playerid]
+unban [identifier]
+slap [playerid] [hp]
+freeze [playerid] [true/false]
+HOME key = PANEL
+
+UNFINISHED:
+teleport

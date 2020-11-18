@@ -1,0 +1,47 @@
+POLICE:
+- SHIFT + G = TACKLE TO GROUND
+- F3 = Police panic button (sends message to all available officers)
+- LSHIFT + N6 = Arrest with anim
+- 1 = While in veh press 1 to enable gun holster when leaving veh
+- /mcard = Show miranda rights card.
+- CTRL + M = Open ANPR system & settings
+- M while in pd car = reset plater reader.
+- /raidroom = To raid closest motel room.(has to be owned)
+
+- /anpr - Toggles the ANPR interface if you are in a specified vehicle with equipped ANPR (Whitelisted).
+- /fixedanpr - Toggles ANPR alerts from fixed ANPR cameras on the map (Whitelisted).
+- /readplate - Reads the plate of the vehicle in front of you and puts it in chat.
+- /checkplate PLATE - Returns the ANPR markers currently active for the specified plate.
+- /focusanpr PLATE - Only displays fixed ANPR alerts for the specified PLATE and automatically draws a route if any hit comes in. Leave PLATE blank to unfocus.
+- /setplateinfo PLATE;INFO - Adds ANPR markers (INFO) for the specified plate. Leave INFO blank to remove markers. Example: /setplateinfo AB12CDE;STOLEN
+- /setvehinfo INFO - Adds ANPR markers (INFO) for the plate of the vehicle you're currently in. Leave INFO blank to remove markers. Example: /setvehinfo STOLEN
+- /anprinterface - Toggles the ANPR interface.
+
+- If you want to transfer your to another player > /transfervehicle ID CARPLATE
+
+- Y near car = Open trunk inventory
+- Y inside car = To open glovebox inv
+
+- /hood = Opens trunk
+- /trunk = opens trunk
+
+- K = Item menu for mask etc
+
+- /cash = shows cash you have
+- /job = shows what job you have
+
+- /ping | Sends Ping To Player With Provided Server ID
+- /ping accept | Accepts Pending Ping
+- /ping reject | Rejects Pending Ping
+- /ping remove | Removes Player Ping Blip From Map
+
+
+-- EMOTE LIST --
+/e c  to cancel current animation
+/e *VARIENT*
+/w stuckprop - Removes prop
+
+-- WALK --
+/w 1-44 / 44 walk styles
+
+` (TILDA) = Show players ID
