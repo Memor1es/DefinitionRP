@@ -1,0 +1,466 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="chart.min.js" type="text/javascript"></script>
+		 <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script>
+		$(function() {
+			/* open the UI for user */
+			window.addEventListener('message', function(event) {
+				if(event.data.type == "open"){
+					$('.pomoc').css('display', 'block')
+					$('body').css('display', 'block')
+					$('html').css('display', 'block')
+				} else if (event.data.type == "close"){
+					$('.pomoc').css('display', 'none')
+					$('body').css('display', 'none')
+					$('html').css('display', 'none')
+				}
+			});
+		});
+		</script>
+	</head>
+
+    <body>
+		<div class="pomoc">
+			<div class="container main">
+				<div class="row">
+					<ul class="menu">
+						<li data-id="page-main" class="active">
+							<span>Home</span>
+						</li>
+						<li data-id="rules">
+							<span>Rules</span>
+						</li>
+						<li data-id="keybinds">
+							<span>Keybinds</span>
+						</li>
+						<li data-id="commands">
+							<span>Commands</span>
+						</li>
+						<li data-id="jobs_activities">
+							<span>Jobs & Activities</span>
+						</li>
+						<li data-id="faq">
+							<span>F.A.Q</span>
+						</li>
+					</ul>
+					<div id="close-help" class ="btn btn-danger" style="display: inline-block;">
+						<span>X</span>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="page page-main">
+							<div class="row">
+								<div class="col-12">
+									<h2>Welcome to DefinitionRP - <em>Define Youself</em></h2>
+									<p>DefinitionRP is a heavy voice roleplay server. This means our staff enforces being in-character at all times and enforce all forms of roleplay to keep every players story meaningful.</p>
+									<br/>
+									<h2>Information</h2>
+									<p><strong>Website:</strong> https://DefinitionRP.com/</p>
+									<p><strong>Discord:</strong> https://discord.gg/Definition</p>
+									<p><strong>Teamspeak3 Server:</strong> ts.drp.wtf</p>
+									<br/>
+									<em class="notice">This is a work in progress and subject to change.</em>
+								</div>
+							</div>
+						</div>
+						<div class="page rules">
+							<div class="row">
+								<div class="col-12 col-lg-12">
+									<h2>Rules <em class="notice">Please check the forums for the most up to date version.</em></h2>
+									<p>First and foremost this is a whitelisted server. We expect good quality RP from all parties that is fun and enjoyable for everyone, and we expect a distinct lack of toxic behavior. Roleplay is not about the money and winning, or getting angry at others just because your character doesn't come out on top in a situation. Before entering any RP situation stop and think to yourself, "Is this going to be fun for them and I?" We expect you to have respect and consideration for everyone's RP and not just your own. If there are multiple reports of any individual making RP unenjoyable for those around them action will be taken against them.</p>
+									<br/>
+									<h4>General Overlaying Rules</h4>
+									<ul>
+										<li>Racism is not tolerated nor allowed for any character persona. You may NOT use racist or homophobic language in-game or on the discord.</li>
+										<li><strong>Police/EMS are not allowed to sell PD/EMS issued weapons or Body Armor. This will result in IC character punishment and your Whitelist being removed. The server health is not at a place for cops to be selling PD issued gear.</strong></li>
+										<li><strike>Stealing of any emergency vehicle(PD/EMS) is not permitted for any reason. Also refrain from blowing them up purposefully.</strike>
+										This is now allowed, but very closely monitored and only with reasonable and believable story-based reasons. You have to be aware that if you take a cops vehicle they are unable to retrieve it until a restart happens, which can cause discouragement and lack of willingness to play, especially if stranded. This doesn't mean everyone can steal a cop car just for shits and giggles.</li>
+										<li>Being or breeding toxicity in any platform can have you removed from the community. If you have an issue, please address it properly, not in ways to create drama or be intentionally negative.</li>
+										<li>Firestarting: Speaking publicly in a way that carelessly or intentionally creates or fuels negativity OOC towards other members</li>
+										<li>Toxicity and Bullying: Toxicity is defined as bringing unwanted attitudes into the community. There is a difference between having an opinion/voicing this opinion, and forcing your opinion on other people. Do not direct your anger/frustration/aggression towards another player.</li>
+										<li>ANY disrespect or attacks towards any member of staff can result in an immediate ban or denied ban appeal.</li>
+										<li>Working, decent mic is required.</li>
+										<li>Stay in-character at all times when on the server. There should be no excuse at all for you to be going OOC while in the city, no matter how upset you are. This will be heavily monitored with little to no leniency. If there is a problem, roleplay the scenario out and then report it on the forums.</li>
+										<li>While you are actively within the server you are NOT to be watching any streams of anyone else on the server on any sort of streaming platform. (Twitch, YouTube, Discord, etc.) This is stream sniping and often leads to meta. If seen you will have moderation action taken against you. (We do understand lurking to assist with views, but lurking does not involve active engagement.)</li>
+										<li>Metagaming, Powergaming, RDM, VDM, and FailRP are not allowed.</li>
+										<li><strong>Metagaming</strong>: Purposely using or relaying information which your character did not learn in game (Twitch Chats and Discord Channels included) to shape in game roleplay.
+											<ul>
+												<li><u>Example</u>: Using what you've learned from watching other streams and chats to make large leaps in speculation to end up "knowing" how things work, or utilizing such info to "stay ahead of the cops".</li>
+												<li><u>Example</u>: Taking information you learned on one character and utilizing it on a different character even if they are "related" or anything of the sort.</li>
+											</ul>
+										</li>
+										<li><strong>Powergaming</strong>: Roleplaying outside of your character traits, abusing mechanics, and using means not actually in game to gain an advantage such as:
+											<ul>
+												<li>Gangs cannot force normal civilians to change their clothes or car colors for having their gangs colors. They cannot repeatedly kill/bully them into changing colors either. <em>If a player is however using a gangs colors to antagonize them or a rival gang is claiming another gangs colors, then action may be taken on them in RP.</em></li>
+												<li>Sprinting/Fighting as soon as you leave the hospital or are revived by medics</li>
+												<li>Talking/Organizing while downed.</li>
+												<li>Roleplaying you have unrealistic superpowers.</li>
+												<li>Not using /me to notify people of something they should notice. <u>Example</u>: If a cop or EMS does /me checks injuries - you should reply /me has stab wounds if you were stabbed.</li>
+												<li>Not realistically fearing for your life when you are threatened with weapons or severe harm from other means.</li>
+												<li>Generally stay true to your physical character. Example: If you are an old or overweight character, you should always have your physical "level" in mind.</li>
+												<li>Jumping while running around to gain speed in a situation.</li>
+												<li>Spamming your M1 to spam punch in a fight and thus not giving the other player a chance to react.</li>
+											</ul>
+										</li>
+										<li><strong>Random Death Match(RDM)</strong>: Attacking another player/group without any story/roleplay leading up to it. If the story and tension between two gangs has led up to war, they wouldn't always need to initiate a situation before shooting at each other. Just deciding you feel like killing and doing so to any person with no warning, or not giving police any notice in a situation. Going on a killing spree right before a server restart, just because it is a server restart, is still RDM and action will still be taken.</li>
+										<li><strong>Vehicle Death Match(VDM)</strong>: Attacking another player/group with a vehicle without any story/roleplay leading up to it. This includes running someone over, even on accident, and just leaving them without making sure they are alright or to call EMS. Ramming into another player's vehicle with intent to cause it to explode or hurt the player also falls under VDM</li>
+										<li><strong>FailRP</strong>: This is the concept of roleplaying in a way that is unrealistic to how things would be in real life. Use common sense. Ask yourself: Is this something I could do in real life? Would it actually work?
+											<ul>
+												<li>Driving in unrealistic ways or taking jumps your car/motorcycle could not handle, and then still driving said vehicle is FailRP.</li>
+												<li>Driving ANY motorized vehicle into the hospital is FailRP</li>
+												<li>Taking jumps from extreme heights and not roleplaying out your injuries is FailRP.</li>
+												<li>Pulling a weapon while inside or outside of MRPD is considered FailRp as there would be many local PD members there.</li>
+												<li>Using a radio while downed is FailRP, besides an initial warning to your allies that you were downed/injured. Do a groan of pain or a quick "I'm hit/I'm down." After that you are not to be using a radio when you go down.</li>
+											</ul>
+										</li>
+										<li><strong>New Life Rule (NLR)</strong>: If you are downed and respawn at the hospital your character forgets the immediate events leading up to being downed in the current scenario. (You forget the past 30 minutes.) You may not respawn if you've been advised that police or EMS is on the way to your scene.</li>
+										<li><strong>Criminal Activity Restriction</strong>: Criminal activities are limited to 5 players max at a time. Relaying information to or between characters (lookouts, radio communications) counts you as part of that scenario. This also applies to the amount of police per scenario.</li>
+										<li><strong>Exploiting</strong>: Exploiting game mechanics of any kind is not allowed. Example: Duping items to keep and not reporting it, abusing game mechanics in unintended ways for clear non-rp gain. Use of job-assigned vehicles (i.e.: Fruit Gathering Truck, Taxi, etc.) is mandatory. You cannot use your personal vehicle for job completion or storage. Using a personally owned vehicle is against the rules. <em>(On a side note: the limit of these items in your inventory is intentional and there to provide balance. To that end, attempting to exploit or circumvent this limit in any way (including but not limited to dropping the items on the ground and picking them all back up) is a violation of these rules and will be subject to the same disciplinary action as the vehicle use.)</em></li>
+										<li><strong>Combat Logging</strong>: When engaged in active roleplay players shall not disconnect from the server until the scenario has completely ended. Characters involved in criminal activity must be completely clear of any Law Enforcement interaction before disconnecting. Accidental disconnects should be communicated via Discord or TeamSpeak. Combat logging is a bannable offense.</li>
+										<li><strong>Fake Hostages</strong>: There are no fake hostages allowed. Meaning you can not be a hostage for a friend and then receive any of the profits of robbing a bank or store. All hostages are to be people you pick up off the street and should have nothing to do with the robbery.</li>
+										<li><strong>Additional Criminal Notification</strong>: While at a Robbery, if a Police officer asks you if you have anyone else on the outside helping you, you need to answer them with 100% honesty. This is to protect both sides from being accused of RDM. NOTE: You do not have to give the names or locations of people on the outside, Just state how many.</li>
+										<li><strong>Player Theft & Kidnapping:</strong>: You can not force your victims to withdraw money from an ATM, sell property, or sell their vehicle. Players can not force their victims to hand over assets that are not present in the area. If you are still kill the player after demands are met, it has to have a story behind it. Random mugging attempts shouldn't lead to their death if they complied. Robbing Cops or EMS needs to have a real reason to add to a story. (See: Cop Interactions for more in depth say) Cops are not loot boxes. They are people just like you.</li>
+										<li><strong>No Crime Zones</strong>: We don't have many NCZ areas. The only NCZ areas are when a player is in a menu and has no chance to react to the situation. Players may not go to a NCZ after engaging in criminal activity resulting in an ongoing chase. <u>Examples</u>: Clothing Store, Car Store, Barber Shop, and Character Creation. </li>
+										<li>Your character may only own/rent one (1) motel room. This is so others can have a chance at having a room as well.</li>
+										<li>Aircraft of any kind are not to be flown unless it is by a trained PD or EMS official. Either that or there is a big story behind this action to explain why you have an aircraft.</li>
+										<li>All emergency personnel are expected to FearRP. If you are found not realistically fearing for your life in a situation where you should, you could have your whitelist status revoked.</li>
+										<li>If a scenario scuffs, Try roleplay it out to the best of your abilities, IE if a bank scuffs instead of "Oh fuck the bank's scuffed again" try something new like "Omg he dropped the keypass down the drain/the thermite was a dud/the security locks engaged yada yada"</li>
+										<li><strong>SexRP, RapeRP & SuicideRP are <u>NOT</u> permitted on this server by any means. RapeRP is an immediate and permanent ban, no appeal, no questions.</strong> We have noticed that ERP has become somewhat the norm on this server, Not true ERP but slight hints of it, This rule is now much more lenient against the ERP rule (This does not mean you can harass women or be overall obscene, (SexRP ETC its still not permitted) If you are asked to stop by the person you're talking to, Please stop.</li>
+									</ul>
+									<h4>Player Rules</h4>
+									<p>When creating a character you are not just putting a name on a model. Also consider:</p>
+									<ul>
+										<li>What are the personality traits of your character? Shy or confident? Hard working or lazy?</li>
+										<li>Give your character some strengths and weaknesses and think about how your character would react to things based on those traits.</li>
+										<li>What is the background for this character? Where do they come from? While this doesn't have to be very detailed, putting some thought into this will make it easier to roleplay the character.</li>
+										<li>Remember to stick to these character traits! You're playing the life of this character so their experiences should let your character evolve. Let the consequences of your actions have an effect on your character.</li>
+										<li>Your character can't be all things or involved in everything. If there's something else you'd like to try out consider creating another character and building a story up to it. Example: A character shouldn't be a Lawyer-CEO-Gangster-Psycho-Rambo who tries to be involved in all of the criminal groups.</li>
+										<li>Be mindful about how you try to enter ongoing scenarios and storylines. You can interact with people to see if an opportunity shows itself but don't just show up out of nowhere trying to impact or steer a current storyline if your story hasn't led up to it. Example: A couple of characters are involved in a storyline where they perform a job or own a business and then another character shows up out of nowhere and kidnaps one without any lead-up but just to antagonize them or what they're doing.</li>
+										<li>Once your character has reached or failed to reach their goals, it might be time to consider this characters story is coming to an end. Perhaps consider other new characters you might want to play.</li>
+										<li>Character names must be realistic and resemble real world names.</li>
+										<li>Character names cannot be names of famous people.</li>
+										<li>Character must not be "Default Danny" (just joining the server and not making an actual character, leaving it as the defaulted look)</li>
+										<li>If you were to "permadeath" a character with a whitelisted job, you cannot create another character and apply for the same whitelisted job. This lifts after 30 days. <em>Depending on the situation the 30 day time may be overlooked/reduced</em></li>
+										<li>Players may not transfer assets to other players or to other characters they own without proper IC reason. Doing so will be treated as Real World Trading (RWT) unless approved by an admin.</li>
+										<li>Copying a known character, whether alive or dead, whether in this server or from elsewhere, UNLESS IT IS YOUR OWN CHARACTER, is forbidden. People have put a lot of time and effort into their characters they have created, and we will not permit anyone to use carbon-copies of characters for any reason. Even if you slightly change the name, it is still a no.</li>
+									</ul>
+									<h4>Permadeath</h4>
+									<ul>
+										<li>A player may decide that events in their characters story have led towards the character being dead for good. The death of a character can have a big impact on not only its story, but the stories of the characters connected to it. If your character is downed and you decide it's time for it's permadeath, all you need to do is roleplay the scenario out with EMS when they find you.</li>
+										<li>You may use the /me command to give the EMS/Doctor characters the right indicators. <u>Example</u>: "/me has no pulse." leading towards "/me has died due to their injuries." <strong>EMS NEED CONFIRMATION ON PERMA.</strong></li>
+										<li>Players are not allowed to bring back characters after you have roleplayed out a death of the character.</li>
+										<li>When wanting to permanently kill off your character, you are required to indicate such through expressing "/me perma" in the RP situation whilst interacting with EMS. You will be asked to confirm, and will be permitted to answer through /ooc confirming the permadeath (ie /ooc Yes perma). Without this OOC confirmation, your character will be thought of to be in an ICU state until the player of that character makes their choice known. <strong>PLEASE KEEP IN MIND</strong>: once you perma your character, you <strong>CANNOT</strong> resurrect said character, for ANY reason.</li>
+									</ul>
+									<h4>Interactions</h4>
+									<p>During their time on Definition RP, a player will get to interact with characters from all walks of life. From government officials and law enforcement, to small business owners and various types of criminals. The goal is for players to provide each other with an immersive experience and add to each others stories.</p>
+									<ul>
+										<li><strong>Torture/Mutilation RP</strong>: We understand that situations will arise where characters will get into circumstances where they may be tortured.
+											<ul>
+												<li>Whether it be for revenge, information, or anything else. OOC consent is not required for general torture RP that is not severe mutilation. <strong>Just understand that if someone becomes OOC uncomfortable with the roleplay, and states this in OOC or a /me, you are to stop. Period.</strong> After that just finish it up there, leave the scene and allow locals to pick them up, or player EMS if you want them to remember, and move on. We do not want anyone being forced to do torture if they are uncomfortable.</li>
+												<li><strong>Mutilation RP <u>needs</u> OOC consent before happening</strong>. This includes things such as: Anything that involves severely disfiguring a character in a way that would be permanent and lasting on their appearance or ability to live normally, removing large body parts or multiple amounts of body parts, or doing something they cannot realistically come back from <strong>EVEN with the NLR rule in place</strong>. These are things that you need consent to do, as it can have a permanent outcome on the character. Even if they are made to take locals after that, and don't remember the situation, this doesn't mean that suddenly it didn't happen. The ones torturing still remember. The body parts were still removed/mutilation still happened in RP. So you need OOC consent first via things such as Discord DMs or /me's. Discord DM's preferred first to not break immersion, /me's if you cannot find or do not know their discord name.</li>
+											</ul>
+										</li>
+										<li><strong>With EMS</strong>:
+											<ul>
+												<li>If you are downed (by accident or as a victim of a crime) you must wait for police or EMS to arrive. Do not send a distress signal then get picked up by your friends to get taken to the hospital.</li>
+												<li>When help arrives both sides should strive to provide a good scenario for each other. EMS will act in a professional manner during the situation and the civilian will roleplay out their injuries to the best of their ability. Use of /me's to provide extra information of vitals and injuries is encouraged.</li>
+												<li>You should never be defaulting your injuries to any genital area. This is gross and uncalled for, and EMS can and will leave you on the ground to take locals where the New Life Rule then takes place.</li>
+												<li>You crash your car, You rolled.. You're now upside down, How did you get out of the car and stand up? Remember, such impact can leave a person dazed/confused/disoriented. If you exit the vehicle, give it a couple seconds before running/moving to simulate the confusion. If you want, you can even call for assistance in getting extracted from the vehicle.</li>
+												<li>If you carry a friend to pillbox make sure they HAVE NOT called EMS, If they have you can not move them unless instructed. And also on arrival (if carried) always cry out for an EMS/Doctor for help, DO NOT run straight to check in unless instructed or no EMS available. If you are downed yourself and unsure if EMS is on, make a /911 call from the perspective of the locals if alone (i.e., /911 *LOCAL* OMG I just saw a car slam into a pole on X Street! The driver launched out of the vehicle! Send help!) If there is no response within 5 mins, then seek help as needed or revive.</li>
+												<li>If you are taken to hospital by a friend, or come in yourself, you are to roleplay with EMS if available and not go directly to check in (again denial of roleplay for EMS)</li>
+											</ul>
+										</li>
+										<li><strong>With Police</strong>:
+											<ul>
+												<li>Police will behave in a professional manner towards the public and each other while the public will provide a base level of respect you'd generally give police. Be mindful of when in police custody, and provide info through the use of the /me command for police to use in their investigations.</li>
+												<li>When a player is downed or put in handcuffs by police they are considered being in police custody. Once in custody the current crime or pursuit scenario is over and switches over to an arrest/investigation scenario. If the defendant is in soft cuffs and runs away so be it, They got lucky. This isn't considered a rule break. (unless they have strapped/tied you to something etc or /me holds arm</li>
+												<li>During an arrest/investigation scenario, friends of the person(s) under arrest may no longer interfere and civilians not needed for questioning or involved should leave the area.</li>
+												<li>Cop Baiting is not allowed. Do not excessively try to gain the attention of cops without reason/to just be annoying. Do not try and pull cops away from situations they are currently in, or bother them while they are in a situation. This ruins others' flow of RP.</li>
+												<li>Do not treat cops as something to only rob for weapons. Have a legitimate RP reason for robbing cops. Do not just shoot them, hold them up in a real roleplay way with meaning. Build up the roleplay of robbing them. Wait until a situation you're already in gives the opportunity to rob them. Do not look at a cop and instantly think, "I just want their weapons so I am going to shoot/rob them."</li>
+											</ul>
+										</li>
+									</ul>
+									<h4>Crime</h4>
+									<ul>
+										<li><strong>Build Up and Pacing</strong>: Don't just rush in to be a master criminal on day one. Let your character make connections and learn how crime works in this city before making big moves like robbing banks or taking on potential rivals.</li>
+										<li><strong>Heat</strong>: Criminals should be mindful of the attention from police their actions may generate. Give yourself enough time between your crimes for things to cool down. You should expect to get more police attention, longer jail times/fines, and investigations if you repeatedly commit crimes in a small time frame.</li>
+										<li><strong>Criminal Hierarchy</strong>: Eventually your character may learn or come in contact with the structure of the criminal world. All criminals had to work their way up in this structure at some point and this climb can be a very important part of their story. Making connections in this world will help evolve your story.</li>
+										<li><strong>Conflict</strong>: While some organizations and criminals may work together from time to time, conflict is expected. Territory, resources, consumers, and power will drive many of these conflicts. Conflict and cooperation both help make stories interesting. Make sure to have good amounts of both. Avoid large alliances that never allow for conflict.</li>
+										<li><strong>Chain Robbing Stores/Banks/Players</strong>: Doing so is unrealistic and unnecessary. It can ruin the flow of RP for players, both cops and civilians, and make it unenjoyable for them. Doing this is classed as FailRP and appropriate actions will be taken against you.</li>
+										<li><strong>Smash and Grabbing/Rushing Robberies</strong>: When doing any sort of robbery at all where you are going to be facing cops showing up to negotiate and have a scene, stay and wait for police to show up instead of just rushing the robbery to escape as fast as you can. Smash and grabbing is denying cops the RP they are here for. Even if you finish a robbery and cops have not shown up, take the time to wait a little to make sure they weren't just busy or backed up on calls.</li>
+										<li>Robbing any banks/stores/jewelry stores/money trucks within 30 minutes of a server restart is NOT permitted. It does not give PD the time to respond or play out a situation.</li>
+										<li>After committing a crime and successfully getting away, you must wait 15 minutes before changing your outfits.</li>
+										<li>When waiting for the next store you would like to rob, you need to not wait outside for 15 mins. You have to break away from the shop robbing RP completely for 15 mins then come back to it or it can be seen as chain robbing</li>
+									</ul>
+									<h4>Environment</h4>
+									<ul>
+										<li>The setting for our storylines is the State of San Andreas and the counties within it. It's a state made up of several million people with your characters being a sample of the people in it. Not acknowledging this is considered FailRP. This includes crime within Police Stations as realistically in a large city it would be fully staffed at all times.</li>
+										<li>While your characters may vary depending on what you prefer the State of San Andreas will act and should be treated as a realistic state. A lot of the balance for a character may come from this. Example: If a player decides to make a psycho killer and go on a spree the player should expect this type of character to be short-lived and once caught to be punished to the fullest extent of the law.</li>
+										<li>Please keep in mind bringing discord/ooc info into the server ie: Staff has said something about something or done something is against the rules and could lead to moderation action to be taken against you.</li>
+									</ul>
+									<h4>Game</h4>
+									<ul>
+										<li><strong>Game Mechanics</strong>: Players should not be using in game mechanics for blatantly unintended purposes just to gain an edge or activities which don't produce any story based roleplay. Example: Using the carry mechanic or shooting each other with tasers for no reason in the past.</li>
+										<li><strong>Players with Priority</strong>: These players are to be held to a higher standard than regular whitelisted players in terms of roleplay, being leaders, and story creation/progression. If you want priority, create RP for others, not yourself.</li>
+										<li><strong>Recording</strong>: Players may take pictures with their phone using the emote. They may record using a camera. The camera may pick up audio if the player is in range to hear the audio (not through walls/glass etc). You should always expect that cops will have body cams/dash cams as cops IRL always have body cams/dash cams.</li>
+										<li><strong>Multiple Characters(from same player) in one gang/group</strong>: This is not allowed. In general try to avoid creating multiple characters involved in the same story/scenarios and could use the same information to push their goals.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="page keybinds">
+							<h2>Keybinds</h2>
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<strong>General Keybinds</strong><br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F1</strong></span> - Pulls out phone (if in your inventory) <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F2</strong></span> - Opens inventory <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F3</strong></span> - Open Job call log <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F5</strong></span> - Hold down to access wheel holding emotes, walk styles, ect. <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F6</strong></span> - Job menu for certain jobs <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F7</strong></span> - Opens invoice menu <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F8</strong></span> - Opens FiveM Console <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F9</strong></span> - Opens emote menu <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F10</strong></span> - Hold for player list <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>B</strong></span> - Point/Stop Pointing <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>C</strong></span> - Look behind you <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>E</strong></span> - Interact <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>F</strong></span> - Get in and out of vehicle <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>H</strong></span> - Hide in trunk <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>M</strong></span> - Interaction menu in clothing stores <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>Q</strong></span> - Take cover <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>R</strong></span> - Reload/Melee <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>T</strong></span> - Open the Chat <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>V</strong></span> - Change from third to first person <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>X</strong></span> - Hands up/down and cancel emote <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>Z</strong></span> - Change voice distance <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>CAPSLOCK</strong></span> - Talk on radio or phone <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>COMMA(,)</strong></span> - Hold to ragdoll and release to stand back up <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>CTRL</strong></span> - Crouch <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>LSHIFT + E</strong></span> - Push a vehicle <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>LSHIFT + G + SPACE</strong></span> - Tackle another player <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>TAB</strong></span> - Show your Hotbar <br/>
+								</div>
+								<div class="col-12 col-lg-6">
+									<strong>Vehicle keybinds</strong><br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>B</strong></span> - Cruise control <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>G</strong></span> - Open trunk/glovebox inventory <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>H</strong></span> - Turn vehicle lights (on/off) <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>H (hold)</strong></span> - Detach trailer if in a truck <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>K</strong></span> - Puts your Seatbelt (on/off)<br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>M</strong></span> - Opens vehicle control panel <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>U</strong></span> - Lock/Unlock owned vehicle <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>Y</strong></span> - Turn the vehicle engine (on/off) <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>LSHIFT</strong></span> - Nitrous while in vehicle <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>Backspace</strong></span> - Turns the hazards (on/off) <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>-</strong></span> - Left Blinker <br/>
+									<span class="btn btn-warning btn-sm mb-1"><strong>=</strong></span> - Right Blinker <br/>
+									<br/><br/>
+
+									<strong>Police keybinds</strong><br/>
+									<span class="btn btn-primary btn-sm mb-1"><strong>F11</strong></span> - Police Radar (In car) <br/>
+									<span class="btn btn-primary btn-sm mb-1"><strong>LSHIFT + E</strong></span> - Arrest someone <br/>
+									<br/><br/>
+
+									<strong>EMS keybinds</strong><br/>
+									<span class="btn btn-danger btn-sm mb-1"><strong>ALT</strong></span> - Turn the siren (on/off) <br/>
+									<br/><br/>
+
+									<strong>Mechanic keybinds</strong><br/>
+									<span class="btn btn-success btn-sm mb-1"><strong>X</strong></span> - To use bed while in flatbed <br/>
+								</div>
+							</div>
+						</div>
+						<div class="page commands">
+							<h2>Commands</h2>
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<strong>General</strong> <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/invite (player_ID))</strong></span> - Invite someone inside your motel/house (must knock at the door first)  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/e (EMOTE)</strong></span> - To play an emote  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/e c</strong></span> - Cancels current emote  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/hood</strong></span> - Open vehicle hood <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/trunk</strong></span> - Open vehicle trunk <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/engine</strong></span> - Turn engine off/on <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/cash</strong></span> - Shows cash <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/job</strong></span> - Shows your job <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/transfervehicle "id" "plate"</strong></span> - Transfer your vehicle to a player.<br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/givekey</strong></span> - Gives your car's key to the closest player.<br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/steal</strong></span> - Access to a player inventory (need to have the hands up) <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/ping ID</strong></span> - Ping a player  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/ping accept</strong></span> - Accept the ping  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/ping reject</strong></span> - Reject the ping  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/ping remove</strong></span> - Remove ping  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/carry</strong></span> - Carry a player  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/takehostage or /th</strong></span> - Take player as a hostage  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/piggyback</strong></span> - Put a player on your back  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/kmh or /mph </strong></span> - Changes the displayed speed units  <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/allkeys </strong></span> - Gives your vehicle keys back if your game crashed before <br/>
+								</div>
+								<div class="col-12 col-lg-6">
+									<strong>Anywhere</strong> <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/e0 </strong></span> - Take earpiece off </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/e1 </strong></span> - Put earpiece on </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/g0 </strong></span> - Take glasses off </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/g1 </strong></span> - Put glasses on </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/h0 </strong></span> - Take hat off </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/h1 </strong></span> - Put hat on </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/m0 </strong></span> - Take mask off </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/m1 </strong></span> - Put mask on </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/t0 </strong></span> - Take torso off </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/t1 </strong></span> - Put torso on </br> <br/>
+
+									<strong>In Clothing Store Only</strong> <br/>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/showoutfits </strong></span> - shows your saved your outfits </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/removeoutfit (ID) </strong></span> - Detlets saved outfits. (ID = the slot you saved it to) </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/outfituse (ID) </strong></span> - Will load your outfit. </br>
+									<span class="btn btn-warning btn-sm mb-1 mb-1"><strong>/outfitadd (ID) (NAME) </strong></span> - This will save your current outfit. (NAME = Whatever you like) </br>
+									<br/>
+
+									<strong>Police</strong> <br/>
+									<span class="btn btn-primary btn-sm mb-1 mb-1"><strong>/raid</strong></span> - Allows police to raid a property <br/>
+									<span class="btn btn-primary btn-sm mb-1 mb-1"><strong>/mcard</strong></span> - Shows right card <br/>
+									<span class="btn btn-primary btn-sm mb-1 mb-1"><strong>/mdt</strong></span> - Opens MDT <br/> <br/>
+
+									<strong>Mechanic</strong> <br/>
+									<span class="btn btn-success btn-sm mb-1 mb-1"><strong>/stopwinch</strong></span> - Stop winch  <br/>
+									<span class="btn btn-success btn-sm mb-1 mb-1"><strong>/unfreezeflatbed</strong></span> - Unfreeze bed  <br/>
+								</div>
+							</div>
+						</div>
+						<div class="page jobs_activities">
+							<h2>Public Jobs & Activities Guide</h2>
+							<p><em class="notice">These jobs are jobs that you do <u>not</u> have to get a specific job for.</em></p>
+							<div class="row">
+								<div class="col-12 col-lg-12">
+									<h4>Mining:</h4>
+									<ul>
+										<li>To start mining head to the quary on your minimap, There you will find a marker to get your pickaxe</li>
+										<li>Once you have your pickaxe, proceed down into the quary area and swing your pickaxe at the rocks.</li>
+										<li>When you have collected enough ore, you will need to go to the foundry (also on the map) to smelt your ore into ingots.</li>
+										<li>When you arrive at the foundry, proceed to the forge and you will be prompted to smelt your ores.</li>
+									</ul>
+									<strong>Selling your ingots</strong><br/>
+									<ul>
+										<li>Head to the warehouse(also on the map) to sell your smelted minerals</li>
+									</ul>
+									<br/>
+									<h4>Lumberjack:</h4>
+									<ul>
+										<li>To start lumberjacking, head to the saw mill on your minimap. There you will find a marker to get your axe.</li>
+										<li>Once you have your axe, proceed down into the wooded area and swing your axe at the trees.</li>
+										<li>When you have collected enough wood, you will need to go to the wood packaging area (also on the map) to pack your wood.</li>
+									</ul>
+									<strong>Selling your packaged wood</strong><br/>
+									<ul>
+										<li>Head to the warehouse(also on the map) to sell your packaged wood</li>
+									</ul>
+									<br/>
+									<h4>Warehouse Haulage:</h4>
+									<ul>
+										<li>To start haulage work, head to the warehouse marked on your map (Near the car dealership)</li>
+										<li>Enter the marker and Press E to show the warehouse menu - You will see the current levels of stock held at the warehouse</li>
+										<li>Press "Load Warehouse" and choose what type of freight you would like to haul.</li>
+									</ul>
+									<strong>Choosing your vehicle type</strong><br/>
+									<ul>
+										<li>Once you have chosen your freight type (Wood, Food, Ingots) you will need to choose either a trailer load, or boxes.</li>
+										<li>Whilst trailers will allow you to earn more money, vans are generally faster therefore you will complete the job quicker.</li>
+									</ul>
+									<strong>Loading the freight</strong><br/>
+									<ul>
+										<li>Once you have chosen your delivery type (Trailer or Box) the relevant vehicle will spawn nearby</li>
+										<li>Get in this vehicle and drive to the marker behind the warehouse to start loading your vehicle</li>
+										<li>If you chose to haul a trailer, once you choose the amount of the load, the trailer will spawn near the warehouse</li>
+									</ul>
+									<strong>Transporting the freight</strong><br/>
+									<ul>
+										<li>Once you are all loaded up, head to the export office at the docks</li>
+										<li>Drive into the marker and leave your vehicle. Walk to the office your vehicle will be unloaded</li>
+										<li>Once your vehicle is unloaded, you need to drive back to the warehouse to collect your pay!</li>
+									</ul>
+									<br/>
+								</div>
+							</div>
+						</div>
+						<div class="page faq">
+							<h2>Frequently Asked Questions</h2>
+							<div class="row">
+								<div class="col-12 col-lg-12">
+									<p><strong>How do I speak?</strong><br/>
+										We use TokoVoip. To learn how to set this up please follow the instrutions on the toko screen or look at the forums for a detailed guide.
+									</p><br/>
+
+									<p><strong>How and where do I get a job?</strong><br/>
+										Go down to the job center marked as a purple "i" on your map. There you will find a list of jobs that are currently not whitelisted. However, a lot of jobs you don't need a job role for! Just look around the map for some odd and end jobs. Whitelisted jobs are currently Mechanics, EMS, DoJ, and Police. To apply for these jobs, fill out the applications in their section of the forums.
+									</p><br/>
+
+									<p><strong>Where can I buy a phone?</strong><br/>
+										Cell phones can be found at some of the convenience stores placed around the map and cost about $400.
+									</p><br/>
+
+									<p><strong>What key do I press to do X?</strong><br/>
+										Please see the keybinds list on the forums or use /help.
+									</p><br/>
+
+									<p><strong>Where do I get a gun license?</strong><br/>
+										Gun licenses can be purchased at the courthouse and are very expensive.
+									</p><br/>
+
+									<p><strong>I'm bleeding out! What do I do?</strong><br/>
+										Contact EMS through a /311 or /911 and be <u>VERY</u> detailed or come down to Pillbox. If you die before they are able to reach you, you will be prompted to send a GPS signal to EMS with G. Please only press G once. If EMS are not available, press and hold E to take locals, you will not lose your items.
+									</p><br/>
+
+									<p><strong>I just dropped dead. Why?</strong><br/>
+										Our server has a food system implemented. You will need to make sure to feed and water yourself occasionally to prevent yourself from starving or getting dehydrated.
+									</p><br/>
+
+									<p><strong>What are the speed limits?</strong><br/>
+										The speed limits are as followes: 45 mph in town, 55 mph on country roads and 85 mph on the highway.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+
+	<script type="text/javascript">
+	$(".pulpit li span").click(function(){
+		$('.main.container > *').hide();
+		$('.'+$(this).data('id')).show();
+	});
+	$(".close-dialog").click(function(){
+		$('.dialog').hide();
+	});
+	$("#close-help").click(function(){
+		$('.page').hide();
+		$('.page-main').show();
+		$('[data-id="page-menu"]').addClass('active');
+		$.post('https://tp-help/NUIFocusOff', JSON.stringify({}));
+	});
+	$(".menu li").click(function(){
+		let $current = $(this),
+			$currentId = $current.data('id');
+		$('.menu .active').removeClass('active');
+		$current.addClass('active');
+		$('.'+$currentId).show();
+		$('.container .page').hide();
+		$('.container .page.'+$currentId).show();
+	});
+	document.onkeyup = function (data) {
+		if (data.which == 27) { // Escape key
+			$('.pomoc').css('display', 'none')
+			$.post('https://tp-help/NUIFocusOff', JSON.stringify({}));
+		}
+	};
+	</script>
+</html>
