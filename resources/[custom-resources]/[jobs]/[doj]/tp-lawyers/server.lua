@@ -1,0 +1,2 @@
+TriggerEvent('esx_phone:registerNumber', 'lawyer', 'Called a laywer', true, true)
+TriggerEvent('esx_society:registerSociety', 'lawyer', 'Department of Justice', 'society_lawyer', 'society_lawyer', 'society_lawyer', {type = 'public'})

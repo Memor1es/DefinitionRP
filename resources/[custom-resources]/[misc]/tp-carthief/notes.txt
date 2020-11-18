@@ -1,0 +1,9 @@
+Its a fucking mess. XD
+
+Need to optimize the way it knows each of the stages you are at:
+1. Before you even speak to Raymond
+2. After speaking with Raymond, waiting for a job
+3. Job comes in, but you're not near the car
+4. You're near the car, start the police tracking blips
+5. After 5 minutes, tracker is deactivated
+6. Take the car to a location, you must get there and it takes about 60 seconds for the door to open (So you must have lost cops)
