@@ -1,0 +1,15 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>stream\ch3_12_strm_1.ymap</Item>
+    <Item>stream\ch3_12.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames />
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>
